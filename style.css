@@ -1,0 +1,202 @@
+:root{
+    margin: 0px;
+    padding: 0px;
+}
+
+.pi {  
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    user-select: none;
+}
+
+@font-face { 
+    font-family: sci-fi; 
+    src: url("font/space of time.ttf"); 
+} 
+
+.parameters{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    
+    top: 38vw;
+    left: 3vw;
+    width: 12vw;
+    height: 8.5vw;
+
+    padding: 1vw;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.801);
+    box-shadow: 0 0 10px 1px rgba(73, 73, 73, 0.25);
+}
+
+.text_field{
+    position: absolute;
+    top: 0.85vw;
+    left: 0.5vw;
+
+    font-family: sci-fi;
+    font-size: 1.27vw;
+    color: white;
+
+}
+
+.input_field{
+    position: absolute;
+    top: 0.8vw;
+    left: 7.5vw;  
+    width: 4vw;
+    height: 1.2vw;
+}
+
+.number_field{
+    width: 4.5vw;
+    height: 1.15vw;
+
+    font-family: sci-fi;
+    font-size: 0.9vw;
+    color: white;
+
+    background-color: blueviolet;
+    /* margin-left : 2vw; */
+    border-radius: 8px;
+}
+
+.border_text_1{
+    position: absolute;
+    top: -1.2vw;
+    left: 0.5vw;
+
+    font-family: schi-fi;
+    font-size: 0.95vw;
+    color: white;
+
+    padding-inline: 10px;
+
+    background-color: black;
+    border: 5px solid transparent; 
+}
+
+.pendulum{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    
+    top: 2vw;
+    left: 64vw;
+    width: 33vw;
+    height: 45vw;
+
+    padding: 1vw;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.801);
+    box-shadow: 0 0 10px 1px rgba(73, 73, 73, 0.25);
+}
+
+.line_1{
+    position: absolute;
+    top: 40.5vw;
+    left: 17.2vw;
+    width: 46.8vw;
+    border: 0.1vw solid white;
+}
+
+.line_2{
+    position: absolute;
+    top: 42.5vw;
+    left: 17.2vw;
+    width: 46.8vw;
+    border: 0.1vw solid white;
+}
+
+.line_3{
+    position: absolute;
+    top: 44.5vw;
+    left: 17.2vw;
+    width: 46.8vw;
+    border: 0.1vw solid white;
+}
+
+.line_4{
+    position: absolute;
+    top: 2vw;
+    left: 1.5vw;
+    height: 43.5vw;
+
+    border-left: 0.1vw solid white;
+}
+
+.line_5{
+    position: absolute;
+    top: 1.5vw;
+    left: 2.5vw;
+    width: 60vw;
+
+    border: 0.1vw solid white;
+}
+
+.box_1{
+    position: absolute;
+    top: 1.5vw;
+    left: 1.5vw;
+    width: 5vw;
+    height: 8vw;
+
+    border-radius: 10px;
+    border: 0.2vw solid white;
+}
+
+.vinyl{
+    position: absolute;
+    top: 2.7vw;
+    left: 2.3vw;
+    width: 3.8vw;
+    height: auto;
+    animation: rotateImg 2s linear infinite;
+}
+
+@keyframes rotateImg {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+  .dot_1{
+    position: absolute;
+    top: 46vw;
+    left: 1.1vw;
+    height: 1vw;
+    width: 1vw;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.dot_2{
+    position: absolute;
+    top: 1.6vw;
+    left: 62vw;
+    height: 1vw;
+    width: 1vw;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.pendulum_canvas{
+    position: absolute;
+    top: 6vw;
+    width: 33vw;
+    height: 33vw;
+
+    border: 1px solid white;
+    z-index: 100;
+}
+
